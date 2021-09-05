@@ -21,15 +21,19 @@
    export RTE_TARGET=x86_64-native-linuxapp-gcc	# 填写机器编译出来版本
    ```
 
-2. ```shell
+2. 编译
+   
+   ```shell
    make
    ```
 
    
-
-3. ```shell
+   
+3. 运行
+   
+   ```shell
    ./build/app/main -c 0xf --log-level=7 -- -p 0xf		# 也可以直接执行 ./runit.sh
    ```
-
+   
    这里可以看出需要 4个lcores 和 4个ports，若机子配置不满足或者需要更好性能，不仅需要改执行命令也要改source。
 
