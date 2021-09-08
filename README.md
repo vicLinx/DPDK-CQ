@@ -1,4 +1,4 @@
-该 Project 是基于 [dpdk-switch](https://github.com/dfshan/dpdk-switch.git) 上修改
+该 Project 是基于 [dpdk-switch](https://github.com/dfshan/dpdk-switch.git) 上修改，实现 cutinQue Switch。
 
 数据包流向：receive.c -> forwarding.c -> output_queue.c -> transmit.c
 
@@ -36,4 +36,7 @@
    ```
    
    这里可以看出需要 4个lcores 和 4个ports，若机子配置不满足或者需要更好性能，不仅需要改执行命令也要改source。
+   
+4. References
+   Optimizing Flow Completion Time via Adaptive Buffer Management in Data Center Networks, International Conference on Parallel Processing(ICPP)2021
 
